@@ -16,12 +16,12 @@ self.__precacheManifest = [
     "url": "/reusable-components/static/js/2.a9007ec9.chunk.js"
   },
   {
-    "revision": "76f83be859d749342ba420e1bb010d6a",
-    "url": "/reusable-components/static/media/Tajawal-Bold.76f83be8.ttf"
-  },
-  {
     "revision": "3358032dd0994cf4a2116f0b16f80d70",
     "url": "/reusable-components/static/media/Tajawal-Medium.3358032d.ttf"
+  },
+  {
+    "revision": "76f83be859d749342ba420e1bb010d6a",
+    "url": "/reusable-components/static/media/Tajawal-Bold.76f83be8.ttf"
   },
   {
     "revision": "e3fe295c55a0cb720f766bccc5eecf63",
