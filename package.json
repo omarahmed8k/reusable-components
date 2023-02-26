@@ -1,7 +1,7 @@
 {
   "name": "reusable-components",
   "version": "0.1.0",
-  "homepage": "https://omarahmed8k.github.io/reusable-components/",
+  "homepage": "https://omarahmed8k.github.io/reusable-components",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.2",
@@ -45,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
