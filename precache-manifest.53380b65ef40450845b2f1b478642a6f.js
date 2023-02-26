@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "b77fcad647d1f383cf56",
-    "url": "/reusable-components/static/css/main.60a44a08.chunk.css"
+    "revision": "e811e97cec0e42e92d57",
+    "url": "/reusable-components/static/css/main.c97b7827.chunk.css"
   },
   {
-    "revision": "b77fcad647d1f383cf56",
-    "url": "/reusable-components/static/js/main.05e40f42.chunk.js"
+    "revision": "e811e97cec0e42e92d57",
+    "url": "/reusable-components/static/js/main.c609973e.chunk.js"
   },
   {
     "revision": "6c31908c56d7ddc8df2d",
     "url": "/reusable-components/static/js/runtime~main.f83f01da.js"
   },
   {
-    "revision": "3570b1b2f99413d173d0",
-    "url": "/reusable-components/static/js/2.a9007ec9.chunk.js"
+    "revision": "0901d5f56ebd799c48e5",
+    "url": "/reusable-components/static/js/2.d67a70e3.chunk.js"
   },
   {
     "revision": "3358032dd0994cf4a2116f0b16f80d70",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/reusable-components/static/media/Tajawal-Regular.e3fe295c.ttf"
   },
   {
-    "revision": "899a8d8a3b0f0bbe23f8984a4306b7d1",
+    "revision": "ecc19623319478dafbea60354253fcfa",
     "url": "/reusable-components/index.html"
   }
 ];
