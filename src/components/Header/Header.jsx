@@ -25,10 +25,10 @@ export default function Header() {
                   <NavLink to={`/`}>{t("header.home")}</NavLink>
                 </li>
                 <li>
-                  <NavLink to={`/`}>{t("header.page1")}</NavLink>
+                  <NavLink to={`/users`}>{t("header.page1")}</NavLink>
                 </li>
                 <li>
-                  <NavLink to={`/`}>{t("header.page2")}</NavLink>
+                  <NavLink to={`/user`}>{t("header.page2")}</NavLink>
                 </li>
                 <li>
                   <NavLink to={`/`}>{t("header.page3")}</NavLink>
