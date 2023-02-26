@@ -2,11 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const toggleSlice = createSlice({
   name: "toggle",
-  initialState: { sidebar: false },
+  initialState: { sidebar: true },
   reducers: {
     toggle(state) {
       state.sidebar = !state.sidebar;
-      document.body.classList.toggle("stop-scrolling");
     },
   },
 });

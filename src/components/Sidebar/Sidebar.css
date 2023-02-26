@@ -1,21 +1,14 @@
 .sidebar {
-  position: fixed;
-  top: 0px;
-  right: 0;
-  width: 250px;
-  height: 100vh;
-  background: linear-gradient(90deg, var(--main-color) 0%, #fff 100%);
+  grid-area: sidebar;
+  position: relative;
+  background: var(--main-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  transform: translateX(100%);
   z-index: 99999;
-}
-
-.sidebar.active {
-  transform: translateX(0);
   box-shadow: 0 0 10px #00000010;
+  overflow: hidden;
 }
 
 .sidebar .sidebar-button {
@@ -34,6 +27,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .sidebar .sidebar-button svg {
@@ -45,44 +39,74 @@
 .sidebar ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  height: 100%;
-  padding: 20px;
 }
 
 .sidebar ul .sidebar-top {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
-  gap: 20px;
+  height: 100px;
+  padding: 10px 20px;
+  overflow: hidden;
+  border-bottom: 5px solid var(--second-color);
 }
 
 .sidebar ul .sidebar-top img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 50%;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
-.sidebar ul .sidebar-top h1 {
-  width: calc(100% - 70px);
-  font-family: var(--font-bold);
-  font-size: 20px;
-  color: var(--text-color);
-}
-
-.sidebar ul .sidebar-top p {
-  width: 100%;
-  font-family: var(--font-regular);
-  font-size: 16px;
-  color: var(--text-color);
-}
-
-.sidebar ul .sidebar-middle {
-}
 .sidebar ul .sidebar-bottom {
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.sidebar ul .sidebar-bottom h5 {
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--light-text);
+  background: var(--second-color);
+}
+
+.sidebar ul .sidebar-bottom ul li {
+  width: 100%;
+}
+
+.sidebar ul .sidebar-bottom ul li a {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  color: var(--light-text);
+}
+
+.sidebar ul .sidebar-bottom ul li a:hover {
+  background: #24346d30;
+}
+
+.sidebar ul .sidebar-bottom ul li a.active {
+  background: #24346d60;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar.active {
+    display: flex;
+  }
+
+  .sidebar .sidebar-button {
+    display: flex;
+  }
 }

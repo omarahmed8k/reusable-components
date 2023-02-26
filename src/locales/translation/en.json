@@ -1,13 +1,22 @@
 {
   "lang": "en",
-  "home": {
-    "a": {
-      "": "",
-      "": ""
-    },
-    "b": {
-      "": "",
-      "": ""
-    }
-  }
+  "table": "Table",
+  "inputs": "Inputs",
+  "heads": "Heads",
+  "buttons": "Buttons",
+  "components": "Components",
+  "topics": "Topics",
+  "folderStructure": "Folder Structure",
+  "globalState": "Global State",
+  "routingLayouts": "Routing & Layouts",
+  "services": "Services (API)",
+  "unitTest": "Unit Test",
+  "home": "الرئيسية",
+  "home": "الرئيسية",
+  "home": "الرئيسية",
+  "home": "الرئيسية",
+  "home": "الرئيسية",
+  "home": "الرئيسية",
+  "home": "الرئيسية",
+  "home": "الرئيسية"
 }

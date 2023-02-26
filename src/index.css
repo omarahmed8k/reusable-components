@@ -20,9 +20,11 @@
   --font-bold: "Tajawal-Bold", sans-serif;
   --font-medium: "Tajawal-Medium", sans-serif;
   --font-regular: "Tajawal-Regular", sans-serif;
-  --main-color: #24346d;
-  --second-color: #009daa;
-  --text-color: #212121;
+  --main-color: #101c2f;
+  --second-color: #24346d;
+  --third-color: #009daa;
+  --light-text: #ffffff;
+  --dark-text: #212121;
 }
 
 /* Scroll Bar */
@@ -31,7 +33,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--main-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -39,7 +41,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--main-color);
+  background: var(--second-color);
 }
 
 * {
@@ -52,31 +54,14 @@
 }
 
 html {
-  direction: ltr;
   scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   font-family: var(--font-regular);
-  color: var(--text-color);
-  text-align: left;
+  color: var(--dark-text);
   cursor: default;
-}
-
-.stop-scrolling {
-  overflow: hidden;
-}
-
-.stop-scrolling::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #00000099;
-  z-index: 9999;
 }
 
 h1,
@@ -96,21 +81,46 @@ label,
 table,
 ul,
 li {
+  font-size: 1rem;
   font-family: var(--font-regular);
-  color: var(--text-color);
+  color: var(--dark-text);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
 }
 
 a {
   cursor: pointer;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--dark-text);
 }
 
 input {
   border: none;
   outline: none;
   font-family: var(--font-regular);
-  color: var(--text-color);
+  color: var(--dark-text);
 }
 
 button {

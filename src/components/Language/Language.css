@@ -1,11 +1,11 @@
 .language {
   position: fixed;
   top: 25%;
-  left: 0;
+  right: 0;
   background: linear-gradient(
     90deg,
-    var(--main-color) 0%,
-    var(--second-color) 100%
+    var(--second-color) 0%,
+    var(--third-color) 100%
   );
   width: 35px;
   height: 40px;
@@ -13,17 +13,19 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 0px 50% 50% 0px;
+  border-radius: 50% 0 0 50%;
   color: #fff;
   font-family: var(--font-bold);
   line-height: 0;
   z-index: 99999;
 }
 
+[dir="rtl"] .language {
+  right: auto;
+  left: 0;
+  border-radius: 0 50% 50% 0;
+}
+
 .language:hover {
-  background: linear-gradient(
-    90deg,
-    var(--second-color) 0%,
-    var(--main-color) 100%
-  );
+  filter: brightness(1.2);
 }

@@ -5,7 +5,7 @@ import "./Home.css";
 export default function Home() {
   return (
     <div>
-      <h1>This is the Home page. It is a child of the Layout component</h1>
+      <h1>📙 Welcome to Reusable Components References</h1>
       <Outlet />
     </div>
   );

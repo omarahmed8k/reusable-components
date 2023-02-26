@@ -1,8 +1,15 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { useTranslation } from "react-i18next";
 import { toggle } from "../../store/toggle-slice";
+import { ReactComponent as Close } from "../../assets/svgs/close.svg";
+import logoAr from "../../assets/images/logo-ar.png";
+import logoEn from "../../assets/images/logo-en.png";
 import "./Sidebar.css";
+import { NavLink } from "react-router-dom";
+
 export default function Sidebar() {
+  const { t, i18n } = useTranslation();
   const dispatch = useDispatch();
   const globalState = useSelector((state) => state);
 
@@ -14,33 +21,49 @@ export default function Sidebar() {
           dispatch(toggle());
         }}
       >
-        Close
+        <Close />
       </button>
       <ul>
         <li className="sidebar-top">
-          <img src="https://picsum.photos/200" alt="" />
-          <h1>Web</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          </p>
+          {t("lang") === "en" ? (
+            <img src={logoEn} alt="logo" />
+          ) : (
+            <img src={logoAr} alt="logo" />
+          )}
         </li>
-        <li className="sidebar-middle">
-          <h5>Pages</h5>
+        <li className="sidebar-bottom">
+          <h5>{t("components")}</h5>
           <ul>
-            <li>Pages</li>
-            <li>Pages</li>
-            <li>Pages</li>
-            <li>Pages</li>
-            <li>Pages</li>
+            <li>
+              <NavLink to="/reusable-components/users">{t("table")}</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">{t("inputs")}</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">{t("heads")}</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">{t("buttons")}</NavLink>
+            </li>
           </ul>
-        </li>
-        <li className="middel-bottom">
-          <h5>Follow Us</h5>
+          <h5>{t("topics")}</h5>
           <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>Youtube</li>
+            <li>
+              <NavLink to="/">{t("folderStructure")}</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">{t("globalState")}</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">{t("routingLayouts")}</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">{t("services")}</NavLink>
+            </li>
+            <li>
+              <NavLink to="/">{t("unitTest")}</NavLink>
+            </li>
           </ul>
         </li>
       </ul>
