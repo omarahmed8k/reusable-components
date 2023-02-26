@@ -1,16 +1,14 @@
 {
-  "files": {
-    "main.css": "/reusable-components/static/css/main.073c9b0a.css",
-    "main.js": "/reusable-components/static/js/main.aea7041c.js",
-    "static/js/787.354db55e.chunk.js": "/reusable-components/static/js/787.354db55e.chunk.js",
-    "static/media/logo.svg": "/reusable-components/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/reusable-components/index.html",
-    "main.073c9b0a.css.map": "/reusable-components/static/css/main.073c9b0a.css.map",
-    "main.aea7041c.js.map": "/reusable-components/static/js/main.aea7041c.js.map",
-    "787.354db55e.chunk.js.map": "/reusable-components/static/js/787.354db55e.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.aea7041c.js"
-  ]
+  "main.css": "/reusable-components/static/css/main.60a44a08.chunk.css",
+  "main.js": "/reusable-components/static/js/main.05e40f42.chunk.js",
+  "main.js.map": "/reusable-components/static/js/main.05e40f42.chunk.js.map",
+  "runtime~main.js": "/reusable-components/static/js/runtime~main.f83f01da.js",
+  "runtime~main.js.map": "/reusable-components/static/js/runtime~main.f83f01da.js.map",
+  "static/js/2.a9007ec9.chunk.js": "/reusable-components/static/js/2.a9007ec9.chunk.js",
+  "static/js/2.a9007ec9.chunk.js.map": "/reusable-components/static/js/2.a9007ec9.chunk.js.map",
+  "index.html": "/reusable-components/index.html",
+  "precache-manifest.f355016073e89c0348a8726871754f1c.js": "/reusable-components/precache-manifest.f355016073e89c0348a8726871754f1c.js",
+  "service-worker.js": "/reusable-components/service-worker.js",
+  "static/css/main.60a44a08.chunk.css.map": "/reusable-components/static/css/main.60a44a08.chunk.css.map",
+  "static/media/index.css": "/reusable-components/static/media/Tajawal-Regular.e3fe295c.ttf"
 }
