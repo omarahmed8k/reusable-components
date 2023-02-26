@@ -1,16 +1,19 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router";
 import Home from "../pages/Home/Home";
+import User from "../pages/User/User";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 export default function MasterRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/user" element={<Home />}>
-        <Route path="" element={<Navigate replace to="user" />} />
-        <Route path="*" element={<Navigate replace to="user" />} />
-        <Route index path="user" element={<Home />} />
-        <Route path="user-page" element={<Home />} />
+      <Route
+        index
+        path="/*"
+        element={<Navigate replace to="reusable-components" />}
+      />
+      <Route path="/reusable-components" element={<Home />}>
+        <Route path="user" element={<User />} />
       </Route>
     </Routes>
   );

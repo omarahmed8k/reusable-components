@@ -3,6 +3,6 @@ import './User.css'
 
 export default function User() {
   return (
-    <div>User</div>
+    <h1>User</h1>
   )
 }

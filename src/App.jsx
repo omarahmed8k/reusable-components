@@ -10,7 +10,7 @@ function App() {
     editTitle(lang);
     checkFixLang(lang);
   }, [lang]);
-  
+
   return (
     <Routes>
       <Route path="/*" element={<Layout />} />
