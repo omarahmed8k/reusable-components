@@ -6,6 +6,7 @@
   "buttons": "Buttons",
   "components": "Components",
   "topics": "Topics",
+  "auth": "Authantication",
   "folderStructure": "Folder Structure",
   "globalState": "Global State",
   "routingLayouts": "Routing & Layouts",

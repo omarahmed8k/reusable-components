@@ -50,6 +50,9 @@ export default function Sidebar() {
           <h5>{t("topics")}</h5>
           <ul>
             <li>
+              <NavLink to="/">{t("auth")}</NavLink>
+            </li>
+            <li>
               <NavLink to="/">{t("folderStructure")}</NavLink>
             </li>
             <li>
