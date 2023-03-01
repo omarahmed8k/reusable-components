@@ -41,10 +41,13 @@ export default function Sidebar() {
               <NavLink to="/">{t("inputs")}</NavLink>
             </li>
             <li>
+              <NavLink to="/">{t("buttons")}</NavLink>
+            </li>
+            <li>
               <NavLink to="/">{t("heads")}</NavLink>
             </li>
             <li>
-              <NavLink to="/">{t("buttons")}</NavLink>
+              <NavLink to="/">{t("alerts")}</NavLink>
             </li>
           </ul>
           <h5>{t("topics")}</h5>
