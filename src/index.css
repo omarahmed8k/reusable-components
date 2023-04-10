@@ -15,6 +15,7 @@
   font-family: "Tajawal-Regular";
   src: url(assets/fonts/Tajawal-Regular.ttf);
 }
+
 /* Main Values */
 :root {
   --font-bold: "Tajawal-Bold", sans-serif;
@@ -29,19 +30,23 @@
 
 /* Scroll Bar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 25px;
 }
 
 ::-webkit-scrollbar-track {
   background: var(--main-color);
+  border-radius: 25px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #a7a7a7;
+  border-radius: 25px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--second-color);
+  background: var(--third-color);
 }
 
 * {
@@ -146,6 +151,32 @@ ul {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.page-title {
+  position: relative;
+  font-size: 28px;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid var(--second-color);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.page-desc {
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1200px) {
