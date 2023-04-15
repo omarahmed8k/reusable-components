@@ -179,6 +179,15 @@ ul {
   margin-bottom: 30px;
 }
 
+.dark-mode {
+  background: var(--main-color);
+  color: var(--light-text);
+}
+
+.dark-mode * {
+  color: #fff !important;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 992px;

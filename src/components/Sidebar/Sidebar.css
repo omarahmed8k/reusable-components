@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: flex-start;
   z-index: 99999;
-  box-shadow: 0 0 10px #00000010;
+  box-shadow: 1px 0px 15px #55555550;
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
 }
