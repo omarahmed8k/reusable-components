@@ -1,13 +1,15 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { toggle } from "../../store/toggle-slice";
-import { NavLink, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { ReactComponent as Menu } from "../../assets/svgs/menu.svg";
 import { useTranslation } from "react-i18next";
 import "./Header.css";
 
 export default function Header() {
   const dispatch = useDispatch();
   const { t } = useTranslation();
+  const { pathname } = useLocation();
 
   return (
     <>
@@ -15,28 +17,7 @@ export default function Header() {
         <div className="container">
           <ul>
             <li>
-              <Link className="logo" to={`/`}>
-                logo
-              </Link>
-            </li>
-            <li>
-              <ul className="nav-links">
-                <li>
-                  <NavLink to={`/`}>{t("header.home")}</NavLink>
-                </li>
-                <li>
-                  <NavLink to={`/users`}>{t("header.page1")}</NavLink>
-                </li>
-                <li>
-                  <NavLink to={`/user`}>{t("header.page2")}</NavLink>
-                </li>
-                <li>
-                  <NavLink to={`/`}>{t("header.page3")}</NavLink>
-                </li>
-                <li>
-                  <NavLink to={`/`}>{t("header.page4")}</NavLink>
-                </li>
-              </ul>
+              {`${pathname.split("/")[2] || "Home"}`.toUpperCase()}
             </li>
             <li>
               <div
@@ -45,7 +26,7 @@ export default function Header() {
                   dispatch(toggle());
                 }}
               >
-                Menu
+                <Menu />
               </div>
             </li>
           </ul>

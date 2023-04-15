@@ -24,7 +24,7 @@ export default function Sidebar() {
         <Close />
       </button>
       <ul>
-        <li className="sidebar-top">
+        <li className="sidebar-top" onClick={() => { dispatch(toggle()); }}>
           {t("lang") === "en" ? (
             <img src={logoEn} alt="logo" />
           ) : (
@@ -35,43 +35,43 @@ export default function Sidebar() {
           <h5>{t("components")}</h5>
           <ul>
             <li>
-              <NavLink to="/reusable-components/table">{t("table")}</NavLink>
+              <NavLink onClick={() => { dispatch(toggle()); }} to="/reusable-components/table">{t("table")}</NavLink>
             </li>
             <li>
-              <NavLink to="/">{t("inputs")}</NavLink>
+              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("inputs")}</NavLink>
             </li>
             <li>
-              <NavLink to="/">{t("imgUploader")}</NavLink>
+              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("imgUploader")}</NavLink>
             </li>
             <li>
-              <NavLink to="/">{t("buttons")}</NavLink>
+              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("buttons")}</NavLink>
             </li>
             <li>
-              <NavLink to="/">{t("heads")}</NavLink>
+              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("heads")}</NavLink>
             </li>
             <li>
-              <NavLink to="/">{t("alerts")}</NavLink>
+              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("alerts")}</NavLink>
             </li>
           </ul>
           <h5>{t("topics")}</h5>
           <ul>
             <li>
-              <NavLink to="/">{t("folderStructure")}</NavLink>
+              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("folderStructure")}</NavLink>
             </li>
             <li>
-              <NavLink to="/">{t("auth")}</NavLink>
+              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("auth")}</NavLink>
             </li>
             <li>
-              <NavLink to="/">{t("globalState")}</NavLink>
+              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("globalState")}</NavLink>
             </li>
             <li>
-              <NavLink to="/">{t("routingLayouts")}</NavLink>
+              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("routingLayouts")}</NavLink>
             </li>
             <li>
-              <NavLink to="/">{t("services")}</NavLink>
+              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("services")}</NavLink>
             </li>
             <li>
-              <NavLink to="/">{t("unitTest")}</NavLink>
+              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("unitTest")}</NavLink>
             </li>
           </ul>
         </li>

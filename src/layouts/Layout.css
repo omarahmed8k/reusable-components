@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 100vh;
-  grid-template-areas: "sidebar sidebar sidebar main main main main main main main main main";
+  grid-template-areas: "sidebar sidebar main main main main main main main main main main";
   overflow: hidden;
 }
 
@@ -10,4 +10,24 @@
   grid-area: main;
   padding: 50px 20px;
   overflow: auto;
+}
+
+@media (max-width: 992px) {
+  .layout {
+    grid-template-areas: "sidebar sidebar sidebar main main main main main main main main main";
+  }
+
+  .page {
+    padding: 50px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-areas: "main main main main main main main main main main main main";
+  }
+
+  .page {
+    padding: 80px 0px 20px 0px;
+  }
 }
