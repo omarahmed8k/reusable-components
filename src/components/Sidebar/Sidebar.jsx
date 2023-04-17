@@ -34,45 +34,22 @@ export default function Sidebar() {
         <li className="sidebar-bottom">
           <h5>{t("components")}</h5>
           <ul>
-            <li>
-              <NavLink onClick={() => { dispatch(toggle()); }} to="/reusable-components/table">{t("table")}</NavLink>
-            </li>
-            <li>
-              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("inputs")}</NavLink>
-            </li>
-            <li>
-              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("imgUploader")}</NavLink>
-            </li>
-            <li>
-              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("buttons")}</NavLink>
-            </li>
-            <li>
-              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("heads")}</NavLink>
-            </li>
-            <li>
-              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("alerts")}</NavLink>
-            </li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/reusable-components/table">{t("table")}</NavLink></li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("inputs")}</NavLink></li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("imgUploader")}</NavLink></li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("buttons")}</NavLink></li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("heads")}</NavLink></li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("alerts")}</NavLink></li>
           </ul>
           <h5>{t("topics")}</h5>
           <ul>
-            <li>
-              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("folderStructure")}</NavLink>
-            </li>
-            <li>
-              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("auth")}</NavLink>
-            </li>
-            <li>
-              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("globalState")}</NavLink>
-            </li>
-            <li>
-              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("routingLayouts")}</NavLink>
-            </li>
-            <li>
-              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("services")}</NavLink>
-            </li>
-            <li>
-              <NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("unitTest")}</NavLink>
-            </li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/reusable-components/service-worker">{t("serviceWorker")}</NavLink></li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("folderStructure")}</NavLink></li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("auth")}</NavLink></li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("globalState")}</NavLink></li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("routingLayouts")}</NavLink></li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("services")}</NavLink></li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("unitTest")}</NavLink></li>
           </ul>
         </li>
       </ul>

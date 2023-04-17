@@ -61,7 +61,7 @@
 
 .sidebar ul .sidebar-bottom {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 75px);
   overflow-y: auto;
 }
 

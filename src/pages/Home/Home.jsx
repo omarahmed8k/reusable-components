@@ -5,7 +5,7 @@ import "./Home.css";
 export default function Home() {
   return (
     <div>
-      <h1>📙 Welcome to Reusable Components References</h1>
+      <h1>📙 Welcome To Frontend Side By Side References</h1>
       <Outlet />
     </div>
   );
