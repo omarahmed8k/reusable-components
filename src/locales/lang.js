@@ -17,9 +17,9 @@ export function currentLang() {
 }
 export function editTitle(lang) {
   if (lang === "ar") {
-    document.title = "المنتجات المستخدمة";
+    document.title = "فرنت اند سايد باي سايد";
   } else {
-    document.title = "Reusables";
+    document.title = "Frontend side by side";
   }
 }
 
