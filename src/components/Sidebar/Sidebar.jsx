@@ -45,6 +45,7 @@ export default function Sidebar() {
           <ul>
             <li><NavLink onClick={() => { dispatch(toggle()); }} to="/reusable-components/service-worker">{t("serviceWorker")}</NavLink></li>
             <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("folderStructure")}</NavLink></li>
+            <li><NavLink onClick={() => { dispatch(toggle()); }} to="/reusable-components/webpack">{t("webpack")}</NavLink></li>
             <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("auth")}</NavLink></li>
             <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("globalState")}</NavLink></li>
             <li><NavLink onClick={() => { dispatch(toggle()); }} to="/">{t("routingLayouts")}</NavLink></li>
